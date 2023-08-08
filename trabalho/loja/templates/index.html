@@ -1,9 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<title>Teste Template</title>
-</head>
-<body>
-<h1>Estamos criando um template.</h1>
-</body>
-</html>
+{% extends 'layout.html' %}
+{% load static %}
+{% block content %}
+            {% include 'partials/header.html' %}
+			
+
+            {% include 'partials/footer.html' %}
+		
+
+{% endblock %}
